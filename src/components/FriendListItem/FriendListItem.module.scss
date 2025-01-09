@@ -1,0 +1,16 @@
+@use '/src/index.scss' as *;
+.friend {
+    @include container-border($padding: 10px, $width: max-content);
+    text-align: center;
+
+    &Name {
+        font-weight: 700;
+    }
+
+    .status {
+        color: red;
+        &.online {
+            color: green;
+        }
+    }
+}

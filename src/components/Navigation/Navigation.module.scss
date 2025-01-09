@@ -1,0 +1,12 @@
+@use '/src/index.scss' as *;
+
+.navigationContainer {
+    position: fixed;
+    top: 75px;
+    right: 75px;
+    @include container-border($width: max-content, $padding: 15px 20px);
+    > p {
+        font-weight: 700;
+        text-align: center;
+    }
+}
