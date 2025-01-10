@@ -8,7 +8,7 @@ export default function Profile({
     stats: { followers, views, likes },
 }) {
     return (
-        <div id="#profile-task-container" className={css.container}>
+        <div id="profile-task-container" className={css.container}>
             <div className={css.userInfo}>
                 <img src={avatar} alt="User avatar" width={200} />
                 <p className={css.name}>{name}</p>
