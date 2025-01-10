@@ -1,10 +1,8 @@
-'use strict';
-import propTypes from 'prop-types';
 import css from './Profile.module.scss';
 
 export default function Profile({
     name,
-    children: tag,
+    tag,
     location,
     avatar,
     stats: { followers, views, likes },
@@ -13,7 +11,7 @@ export default function Profile({
         <div id="#profile-task-container" className={css.container}>
             <div className={css.userInfo}>
                 <img src={avatar} alt="User avatar" width={200} />
-                <p className={css.name}>{name}</p>{' '}
+                <p className={css.name}>{name}</p>
                 <p className={css.tag}>@{tag}</p>
                 <p className={css.location}>{location}</p>
             </div>
@@ -31,11 +29,3 @@ export default function Profile({
         </div>
     );
 }
-
-Profile.propTypes = {
-    name: propTypes.string.isRequired,
-    children: propTypes.string.isRequired,
-    location: propTypes.string.isRequired,
-    avatar: propTypes.string.isRequired,
-    stats: propTypes.object.isRequired,
-};

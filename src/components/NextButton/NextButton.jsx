@@ -1,7 +1,4 @@
-'use strict';
-
 import css from './NextButton.module.scss';
-import propTypes from 'prop-types';
 
 export default function NextButton({ children, link }) {
     return (
@@ -10,8 +7,3 @@ export default function NextButton({ children, link }) {
         </li>
     );
 }
-
-NextButton.propTypes = {
-    children: propTypes.string.isRequired,
-    link: propTypes.string.isRequired,
-};

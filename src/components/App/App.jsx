@@ -1,4 +1,3 @@
-'use strict';
 // import css from './App.module.scss';
 import Profile from '../Profile/Profile.jsx';
 import FriendList from '../FriendList/FriendList.jsx';
@@ -16,9 +15,8 @@ export default function App() {
                 location={location}
                 avatar={avatar}
                 stats={stats}
-            >
-                {tag}
-            </Profile>
+                tag={tag}
+            />
 
             <FriendList friends={friends} />
 

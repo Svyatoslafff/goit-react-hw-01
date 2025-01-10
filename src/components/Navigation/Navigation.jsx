@@ -1,4 +1,3 @@
-'use strict';
 import css from './Navigation.module.scss';
 import NextButton from '../NextButton/NextButton.jsx';
 
